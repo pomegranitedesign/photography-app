@@ -33,7 +33,10 @@ const Photos = ({ photos = [] }) => {
 							<Card>
 								<div>
 									<SinglePhoto src={currentPhoto.url} />
-									<AddComment imageID={currentPhoto.id} />
+									<AddComment
+										imageID={currentPhoto.id}
+										toggle={toggle}
+									/>
 								</div>
 								<Comments>
 									<ul>
